@@ -1,0 +1,453 @@
+{
+  "looking_glasses": {
+    "6695": {
+      "http": {
+        "url": "https://lg.de-cix.net/",
+        "referer": "https://lg.de-cix.net/",
+        "rarg": "routeserver",
+        "type": "post",
+        "prefix": true
+      },
+      "html": {
+        "tag": "pre",
+        "tagindex": 0,
+        "id": "",
+        "class": "",
+        "contentindex": 0,
+        "striphtml": false,
+        "insertbr": false
+      },
+      "commands": {
+        "summary": {
+          "query": "show ip bgp summary",
+          "routeserver": "rs1-active.de-cix.net",
+          "tab": "bgp_summary",
+          "submit": "Submit",
+          "lg_query_arg": 0
+        },
+        "neighbor": {
+          "query": "show ip bgp neighbor",
+          "routeserver": "rs1-active.de-cix.net",
+          "tab": "neighbour_info",
+          "submit": "Submit",
+          "argument": "$",
+          "lg_query_arg": "argument"
+        },
+        "bgp": {
+          "query": "show ip bgp",
+          "routeserver": "rs1-active.de-cix.net",
+          "tab": "prefix_info",
+          "submit": "Submit",
+          "argument": "$",
+          "lg_query_arg": "argument"
+        }
+      },
+      "output": {
+        "summary": {
+          "ip": 0,
+          "asn": 1,
+          "ipCount": 5
+        },
+        "communities": [
+          "6695",
+          "0"
+        ],
+        "type":"bird"
+      }
+    },
+    "47228": {
+      "http": {
+        "url": "https://lg.muc.de-cix.net/",
+        "referer": "https://lg.muc.de-cix.net/",
+        "rarg": "routeserver",
+        "type": "post",
+        "prefix": true
+      },
+      "html": {
+        "tag": "pre",
+        "tagindex": 0,
+        "id": "",
+        "class": "",
+        "contentindex": 0,
+        "striphtml": false,
+        "insertbr": false
+      },
+      "commands": {
+        "summary": {
+          "query": "show ip bgp summary",
+          "routeserver": "rs1-active.alp-ix.net",
+          "tab": "bgp_summary",
+          "submit": "Submit",
+          "lg_query_arg": 0
+        },
+        "neighbor": {
+          "query": "show ip bgp neighbor",
+          "routeserver": "rs1-active.alp-ix.net",
+          "tab": "neighbour_info",
+          "submit": "Submit",
+          "argument": "$",
+          "lg_query_arg": "argument"
+        },
+        "bgp": {
+          "query": "show ip bgp",
+          "routeserver": "rs1-active.alp-ix.net",
+          "tab": "prefix_info",
+          "submit": "Submit",
+          "argument": "$",
+          "lg_query_arg": "argument"
+        }
+      },
+      "output": {
+        "summary": {
+          "ip": 0,
+          "asn": 1,
+          "ipCount": 5
+        },
+        "communities": [
+          "47228",
+          "0"
+        ],
+        "type":"bird"
+      }
+    },
+    "8631":{
+        "http":{
+            "url":"http://www.msk-ix.ru/eng/lookingglass.html", 
+            "referer":"http://www.msk-ix.ru/eng/lookingglass.html",
+            "rarg":"rtr",
+            "type": "post",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "query":"summary", 
+                "Submit":"1", 
+                "rtr":"msk-rs1.ripn.net", 
+                "addr":"", 
+                "ne_arg":"",
+                "community":"", 
+                "run.x":"15", 
+                "run.y":"12",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "query":"ne",
+                "Submit":"1",
+                "rtr":"msk-rs1.ripn.net",
+                "addr":"",
+                "ne_arg":"$",
+                "community":"",
+                "run.x":"11",
+                "run.y":"25",
+                "lg_query_arg":"ne_arg"
+            },
+            "bgp":{
+                "query":"bgp",
+                "Submit":"1",
+                "rtr":"msk-rs1.ripn.net",
+                "addr":"$",
+                "ne_arg":"",
+                "community":"",
+                "run.x":"10",
+                "run.y":"20",
+                "lg_query_arg":"addr"
+            }
+	    },
+	    "output":{
+            "summary":{"ip":0, "asn":2, "ipCount":7},
+            "communities": [
+              "8631",
+              "0",
+              "65281"
+            ],
+            "type":"bird"
+	    }
+	},
+    "43690":{
+        "http":{
+            "url":"http://www.ix.ru/eng/spb/lookingglass.html", 
+            "referer":"http://www.ix.ru/eng/spb/lookingglass.html",
+            "rarg":"rtr",
+            "type": "post",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "query":"summary", 
+                "Submit":"1", 
+                "rtr":"spb-rs1.ripn.net", 
+                "addr":"", 
+                "ne_arg":"",
+                "community":"", 
+                "run.x":"15", 
+                "run.y":"12",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "query":"ne",
+                "Submit":"1",
+                "rtr":"spb-rs1.ripn.net",
+                "addr":"",
+                "ne_arg":"$",
+                "community":"",
+                "run.x":"11",
+                "run.y":"25",
+                "lg_query_arg":"ne_arg"
+            },
+            "bgp":{
+                "query":"bgp",
+                "Submit":"1",
+                "rtr":"spb-rs1.ripn.net",
+                "addr":"$",
+                "ne_arg":"",
+                "community":"",
+                "run.x":"10",
+                "run.y":"20",
+                "lg_query_arg":"addr"
+            }
+	    },
+	    "output":{
+            "summary":{"ip":0, "asn":2, "ipCount":7},
+            "communities": [
+              "43690",
+              "0",
+              "65281"
+            ],
+            "type":"bird"
+	    }
+	},
+    "42403":{
+        "http":{
+            "url":"http://www.ix.ru/eng/nsk/lookingglass.html", 
+            "referer":"http://www.ix.ru/eng/nsk/lookingglass.html",
+            "rarg":"rtr",
+            "type": "post",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "query":"summary", 
+                "Submit":"1", 
+                "rtr":"nsk-rs1.ripn.net", 
+                "addr":"", 
+                "ne_arg":"",
+                "community":"", 
+                "run.x":"15", 
+                "run.y":"12",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "query":"ne",
+                "Submit":"1",
+                "rtr":"nsk-rs1.ripn.net",
+                "addr":"",
+                "ne_arg":"$",
+                "community":"",
+                "run.x":"11",
+                "run.y":"25",
+                "lg_query_arg":"ne_arg"
+            },
+            "bgp":{
+                "query":"bgp",
+                "Submit":"1",
+                "rtr":"nsk-rs1.ripn.net",
+                "addr":"$",
+                "ne_arg":"",
+                "community":"",
+                "run.x":"10",
+                "run.y":"20",
+                "lg_query_arg":"addr"
+            }
+	    },
+	    "output":{
+            "summary":{"ip":0, "asn":2, "ipCount":7},
+            "communities": [
+              "42403",
+              "0",
+              "65281"
+            ],
+            "type":"bird"
+	    }
+	},
+    "8714":{
+        "http":{
+            "url":"https://support.linx.net/cgi-bin/rs/members/rslg", 
+            "referer":"https://support.linx.net/cgi-bin/rs/members/rslg",
+            "rarg":"rs",
+            "type": "post",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "rs":"rs3.lon1",
+                "query":"summary",
+                "arg":"",
+                "arg2":"",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "rs":"rs3.lon1",
+                "query":"received",
+                "arg":"$",
+                "arg2":"",
+                "lg_query_arg":"arg"
+            },
+            "bgp":{
+                "rs":"rs3.lon1",
+                "query":"route",
+                "arg":"$",
+                "arg2":"",
+                "lg_query_arg":"arg"
+            }
+        },
+	    "output":{
+            "summary":{"ip":0, "asn":2, "ipCount":9},
+            "communities": [
+              "8714",
+              "0",
+              "65281"
+            ],
+            "type":"quagga"
+	    }
+    },
+    "8545":{
+        "http":{
+            "url":"http://www.plix.pl/en/lg/fetch", 
+            "referer":"http://www.plix.pl/en/lg/fetch",
+            "rarg":"form[router]",
+            "type": "post",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "utf8":"%E2%9C%93",
+                "authenticity_token":"hG54e6xSRCABAScmF3oHjQ2uj0XUQO4W8QM3bwmFpnY=",
+                "form[router]":"waw-rs1.plix.pl",
+                "form[query]":"2",
+                "form[arg]":"",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "utf8":"%E2%9C%93",
+                "authenticity_token":"hG54e6xSRCABAScmF3oHjQ2uj0XUQO4W8QM3bwmFpnY=",
+                "form[router]":"waw-rs1.plix.pl",
+                "form[query]":"100",
+                "form[arg]":"$",
+                "lg_query_arg":"form[arg]"
+            },
+            "bgp":{
+                "utf8":"%E2%9C%93",
+                "authenticity_token":"hG54e6xSRCABAScmF3oHjQ2uj0XUQO4W8QM3bwmFpnY=",
+                "form[router]":"waw-rs1.plix.pl",
+                "form[query]":"1",
+                "form[arg]":"$",
+                "lg_query_arg":"form[arg]"
+            }
+        },
+	    "output":{
+            "summary":{"ip":0, "asn":1, "ipCount":7},
+            "communities": {
+                "block_all":["8545:65000"],
+                "block_asn":["$AS:65000"],
+                "allow_asn":["$AS:65111"]
+            },
+            "type":"bird"
+	    }
+    },
+    "31210":{
+        "http":{
+            "url":"http://dtel-ix.net/lg/birdlg.cgi", 
+            "referer":"http://dtel-ix.net/lg/birdlg.cgi",
+            "rarg":"rtr",
+            "type": "get",
+            "prefix": true
+        },
+        "html":{
+            "tag":"pre",
+            "tagindex": 0,
+            "id":"",
+            "class": "",
+            "contentindex": 0,
+            "striphtml": false,
+            "insertbr": false
+        },
+	    "commands":{
+            "summary":{
+                "rtr":"1",
+                "cmd":"1",
+                "arg":"",
+                "action":"Execute",
+                "lg_query_arg":0
+            },
+            "neighbor":{
+                "rtr":"1",
+                "cmd":"3",
+                "arg":"$",
+                "action":"Execute",
+                "lg_query_arg":"arg"
+            },
+            "bgp":{
+                "rtr":"1",
+                "cmd":"2",
+                "arg":"$",
+                "action":"Execute",
+                "lg_query_arg":"arg"
+            }
+        },
+	    "output":{
+            "summary":{"ip":0, "asn":1, "ipCount":4},
+            "communities": [
+              "31210",
+              "0",
+              "65281"
+            ],
+            "type":"bird"
+	    }
+    }
+  }
+}

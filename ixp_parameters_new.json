@@ -1,0 +1,2127 @@
+{
+    "looking_glasses": {
+        "0": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1-active.alp-ix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1-active.alp-ix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1-active.alp-ix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "http://lg.muc.de-cix.net/",
+                "type": "post",
+                "url": "http://lg.muc.de-cix.net/"
+            },
+            "lat": 48.1333,
+            "lon": 11.5667,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "type": "bird"
+            }
+        },
+        "1": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "http://lg.nyc.de-cix.net/",
+                "type": "post",
+                "url": "http://lg.nyc.de-cix.net/"
+            },
+            "lat": 40.7127,
+            "lon": 74.0059,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "type": "bird"
+            }
+        },
+        "1120": {
+            "commands": {
+                "bgp": {
+                    "lg_query_arg": "tx_acoforms_pi1[addr]",
+                    "tx_acoforms_pi1[Senden]": "suchen",
+                    "tx_acoforms_pi1[addr]": "$",
+                    "tx_acoforms_pi1[closedDoc]": "1",
+                    "tx_acoforms_pi1[protocol]": "IPv4",
+                    "tx_acoforms_pi1[query]": "summary",
+                    "tx_acoforms_pi1[req_fields]": "query",
+                    "tx_acoforms_pi1[router]": "$"
+                },
+                "neighbor": {
+                    "lg_query_arg": "tx_acoforms_pi1[addr]",
+                    "tx_acoforms_pi1[Senden]": "suchen",
+                    "tx_acoforms_pi1[addr]": "$",
+                    "tx_acoforms_pi1[closedDoc]": "1",
+                    "tx_acoforms_pi1[protocol]": "IPv4",
+                    "tx_acoforms_pi1[query]": "advertised-routes",
+                    "tx_acoforms_pi1[req_fields]": "query",
+                    "tx_acoforms_pi1[router]": "$"
+                },
+                "summary": {
+                    "lg_query_arg": "tx_acoforms_pi1[addr]",
+                    "tx_acoforms_pi1[Senden]": "suchen",
+                    "tx_acoforms_pi1[addr]": "$",
+                    "tx_acoforms_pi1[closedDoc]": "1",
+                    "tx_acoforms_pi1[protocol]": "IPv4",
+                    "tx_acoforms_pi1[query]": "summary",
+                    "tx_acoforms_pi1[req_fields]": "query",
+                    "tx_acoforms_pi1[router]": "$"
+                }
+            },
+            "html": {
+                "class": "code",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "tx_acoforms_pi1[router]",
+                "referer": "http://www.vix.at/vix_lookingglass.html?&no_cache=1&L=1&no_cache=1",
+                "type": "post",
+                "url": "http://www.vix.at/vix_lookingglass.html?&no_cache=1&L=1"
+            },
+            "lat": 48.2206849,
+            "lon": 16.3800599,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "15645": {
+            "commands": {
+                "bgp": {
+                    ".submit": "Submit",
+                    "address": "$",
+                    "lg_query_arg": "address",
+                    "routername": "RS-1",
+                    "service": "bgpsum"
+                },
+                "neighbor": {
+                    ".submit": "Submit",
+                    "address": "$",
+                    "lg_query_arg": "address",
+                    "routername": "RS-1",
+                    "service": "bgpnei"
+                },
+                "summary": {
+                    ".submit": "Submit",
+                    "address": "$",
+                    "lg_query_arg": "address",
+                    "routername": "RS-1",
+                    "service": "bgpsum"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routername",
+                "referer": "http://lg.ix.net.ua/",
+                "type": "post",
+                "url": "http://lg.ix.net.ua/"
+            },
+            "lat": 50.4020355,
+            "lon": 30.5326905,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "15669": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs1.bix.bg+(IPv4)"
+                },
+                "neighbor": {
+                    "addr": "neighbors $ routes",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs1.bix.bg+(IPv4)"
+                },
+                "summary": {
+                    "addr": "",
+                    "lg_query_arg": "addr",
+                    "query": "summary",
+                    "router": "rs1.bix.bg+(IPv4)"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.bix.bg/",
+                "type": "get",
+                "url": "http://lg.bix.bg/"
+            },
+            "lat": 42.6742392,
+            "lon": 23.3333,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            }
+        },
+        "19214": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "SF-200PAUL-CORE01"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "SF-200PAUL-CORE01"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "SF-200PAUL-CORE01"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.centauricom.com/lg/lg.cgi",
+                "type": "post",
+                "url": "http://lg.centauricom.com/lg/lg.cgi"
+            },
+            "lat": 37.7233428,
+            "lon": -122.3978233,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "2": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1-active.work-ix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1-active.work-ix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1-active.work-ix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "http://lg.ham.de-cix.net/",
+                "type": "post",
+                "url": "http://lg.ham.de-cix.net/"
+            },
+            "lat": 53.5653,
+            "lon": 10.0014,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "type": "bird"
+            }
+        },
+        "2108": {
+            "bgp_url": "https://www.cix.hr/cix/index.php/bgplg/prefixInfoPublic",
+            "commands": {
+                "bgp": {
+                    "lg_query_arg": "mreza",
+                    "mreza": "$",
+                    "rs_num": "rs1.srce.hr"
+                },
+                "neighbor": {
+                    "lg_query_arg": "mreza",
+                    "mreza": "$",
+                    "rs_num": "rs1.srce.hr"
+                },
+                "summary": {
+                    "lg_query_arg": "mreza",
+                    "rs_num": "rs1.srce.hr"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "output_pre",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rs_num",
+                "referer": "https://www.cix.hr/cix/index.php/bgplg/bgplgSummaryPublic?language=hr",
+                "type": "post",
+		"url": "https://www.cix.hr/cix/index.php/bgplg/bgplgSummaryPublic"
+            },
+            "lat": 45.792222,
+            "lon": 15.969507,
+            "neighbor_url": "https://www.cix.hr/cix/index.php/bgplg/neighbourInfoPublic",
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 6
+                },
+                "type": "bird"
+            },
+            "summary_url": "https://www.cix.hr/cix/index.php/bgplg/bgplgSummaryPublic?language=hr"
+        },
+        "24029": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "NIXI Mumbai"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "NIXI Mumbai"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "NIXI Mumbai"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://180.179.222.68/lg",
+                "type": "post",
+                "url": "http://180.179.222.68/lg/"
+            },
+            "lat": 19.0822507,
+            "lon": 72.8812042,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "24745": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs1-ipv4"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "rs1-ipv4"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "rs1-ipv4"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://trafic.balcan-ix.net/lg",
+                "type": "post",
+                "url": "http://trafic.balcan-ix.net/lg"
+            },
+            "lat": 44.4378258,
+            "lon": 26.0946376,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "25309": {
+            "commands": {
+                "bgp": {
+                    "action": "show+ip+bgp",
+                    "args": "$",
+                    "lg_query_arg": "args",
+                    "server": "RS1.TOP-IX.ORG"
+                },
+                "regex": {
+                    "action": "show+ip+bgp+regexp",
+                    "args": "^$",
+                    "lg_query_arg": "args",
+                    "server": "RS1.TOP-IX.ORG"
+                },
+                "summary": {
+                    "action": "show+ip+bgp+summary",
+                    "args": "",
+                    "lg_query_arg": "args",
+                    "server": "RS1.TOP-IX.ORG"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "server",
+                "referer": "http://lg.top-ix.org/",
+                "type": "get",
+                "url": "http://lg.top-ix.org/"
+            },
+            "lat": 45.0667,
+            "lon": 7.7,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "25478": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "pageid": "9",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "w-ix fft-r0"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "pageid": "9",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "w-ix fft-r0"
+                },
+                "summary": {
+                    "addr": "",
+                    "lg_query_arg": "addr",
+                    "pageid": "9",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "w-ix fft-r0"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://w-ix.com/index.php?pageid=9",
+                "type": "get",
+                "url": "http://w-ix.com/index.php"
+            },
+            "lat": 55.749792,
+            "lon": 37.632495,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "26496": {
+            "commands": {
+                "bgp": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "2",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                },
+                "neighbor": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "3",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                },
+                "summary": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "1",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://dtel-ix.net/lg/birdlg.cgi",
+                "type": "get",
+                "url": "http://dtel-ix.net/lg/birdlg.cgi"
+            },
+            "lat": 55.75806,
+            "lon": 37.572151,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            }
+        },
+        "3": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.dxb.de-cix.net;4",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.dxb.de-cix.net;4",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.dxb.de-cix.net;4",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "http://lg.uae-ix.net/",
+                "type": "post",
+                "url": "http://lg.uae-ix.net/"
+            },
+            "lat": 24.979447,
+            "lon": 55.3127729,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "31210": {
+            "commands": {
+                "bgp": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "2",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                },
+                "neighbor": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "3",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                },
+                "summary": {
+                    "action": "Execute",
+                    "arg": "$",
+                    "cmd": "1",
+                    "lg_query_arg": "arg",
+                    "rtr": "1"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://dtel-ix.net/lg/birdlg.cgi",
+                "type": "get",
+                "url": "http://dtel-ix.net/lg/birdlg.cgi"
+            },
+            "lat": 55.75806,
+            "lon": 37.572151,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            }
+        },
+        "34123": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs.svao-ix.ru"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "rs.svao-ix.ru"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "rs.svao-ix.ru"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": -2,
+                "id": "",
+                "insertbr": true,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.svao-ix.ru/",
+                "type": "post",
+                "url": "http://lg.svao-ix.ru/"
+            },
+            "lat": 55.749792,
+            "lon": 37.632495,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "39392": {
+            "commands": {
+                "bgp": {
+                    "args": "$",
+                    "cmd": "c2",
+                    "lg_query_arg": "args",
+                    "protocol": "ipv4",
+                    "router": "1",
+                    "send": "Submit"
+                },
+                "neighbor": {
+                    "args": "$",
+                    "cmd": "c5",
+                    "lg_query_arg": "args",
+                    "protocol": "ipv4",
+                    "router": "1",
+                    "send": "Submit"
+                },
+                "summary": {
+                    "args": "$",
+                    "cmd": "c1",
+                    "lg_query_arg": "args",
+                    "protocol": "ipv4",
+                    "router": "1",
+                    "send": "Submit"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.peering.cz",
+                "type": "post",
+                "url": "http://lg.peering.cz"
+            },
+            "lat": 50.0596696,
+            "lon": 14.4656239,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            },
+            "password": "lg",
+            "username": "lg"
+        },
+        "39626": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "smilers1"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "smilers1"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "smilers1"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.smile.smn.lv/cgi-bin/lg/lg.cgi",
+                "type": "post",
+                "url": "http://lg.smile.smn.lv/cgi-bin/lg/lg.cgi"
+            },
+            "lat": 56.9895988,
+            "lon": 24.1995305,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "42403": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "nsk-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "nsk-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "nsk-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/nsk/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/nsk/lookingglass.html"
+            },
+            "lat": 54.969977,
+            "lon": 82.9494049,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "42476": {
+            "commands": {
+                "bgp": {
+                    "cmd": "show+ip+bgp+detail",
+                    "lg_query_arg": "req",
+                    "req": "$"
+                },
+                "regex": {
+                    "cmd": "show+ip+bgp+as",
+                    "lg_query_arg": "req",
+                    "req": "$"
+                },
+                "summary": {
+                    "cmd": "show+ip+bgp+summary",
+                    "lg_query_arg": "req",
+                    "req": ""
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": 0,
+                "referer": "http://rs1.swissix.ch/cgi-bin/bgplg",
+                "type": "get",
+                "url": "http://rs1.swissix.ch/cgi-bin/bgplg"
+            },
+            "lat": 47.377455,
+            "lon": 8.536715,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 6
+                },
+                "type": "bird"
+            }
+        },
+        "43100": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.dxb.de-cix.net;4",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.dxb.de-cix.net;4",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "2",
+                    "router": "Routeur_l1"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.uae-ix.net/",
+                "type": "post",
+                "url": "http://noc.rezopole.net/lg/"
+            },
+            "lat": 45.750665,
+            "lon": 4.844269,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "43213": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "ekt-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "ekt-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "ekt-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/ekt/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/ekt/lookingglass.html"
+            },
+            "lat": 56.813891,
+            "lon": 60.6549335,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "43690": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "spb-rs1.ripn.net",
+                    "run.x": "11",
+                    "run.y": "12"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "spb-rs1.ripn.net",
+                    "run.x": "10",
+                    "run.y": "10"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "spb-rs1.ripn.net",
+                    "run.x": "26",
+                    "run.y": "23"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/spb/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/spb/lookingglass.html"
+            },
+            "lat": 59.9174455,
+            "lon": 30.3250575,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "4635": {
+            "commands": {
+                "bgp": {
+                    "lg_query_arg": "name",
+                    "name": "$",
+                    "router": "",
+                    "show": "AS_path"
+                },
+                "neighbor": {
+                    "lg_query_arg": "name",
+                    "name": "$",
+                    "router": "",
+                    "show": "ip_bgp_adv"
+                },
+                "summary": {
+                    "lg_query_arg": "name",
+                    "name": "202.40.161.1",
+                    "router": "",
+                    "show": "ip_bgp_summ"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://www.hkix.net/hkix/hkixlg.htm",
+                "type": "post",
+                "url": "http://hubble.itsc.cuhk.edu.hk/cgi-bin/pub/hkixlg"
+            },
+            "lat": 22.3698443,
+            "lon": 114.1223787,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "47822": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "smr-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "smr-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "smr-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/smr/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/smr/lookingglass.html"
+            },
+            "lat": 53.260908,
+            "lon": 50.198077,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "48216": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "rnd-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "rnd-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "rnd-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/rnd/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/rnd/lookingglass.html"
+            },
+            "lat": 47.2610085,
+            "lon": 39.6279999,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "50706": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "kzn-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "kzn-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "kzn-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/kzn/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/kzn/lookingglass.html"
+            },
+            "lat": 55.7955015,
+            "lon": 49.073303,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "50844": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "DNIX-RouteServer"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "DNIX-RouteServer"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "DNIX-RouteServer"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://ix.dn.ua/lg/",
+                "type": "post",
+                "url": "http://ix.dn.ua/lg/"
+            },
+            "lat": 47.994573,
+            "lon": 37.804922,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "513": {
+            "commands": {
+                "bgp": {
+                    ".cgifields": "router",
+                    "args": "$",
+                    "lg_query_arg": "args",
+                    "query": "prefix",
+                    "router": "EE2:foundry",
+                    "submit": "Submit"
+                },
+                "neighbor": {
+                    ".cgifields": "router",
+                    "args": "$",
+                    "lg_query_arg": "args",
+                    "query": "neighbor",
+                    "router": "EE2:foundry",
+                    "submit": "Submit"
+                },
+                "summary": {
+                    ".cgifields": "router",
+                    "args": "$",
+                    "lg_query_arg": "args",
+                    "query": "summary",
+                    "router": "EE2:foundry",
+                    "submit": "Submit"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": -1,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.cern.ch/",
+                "type": "post",
+                "url": "http://lg.cern.ch/lg.cgi"
+            },
+            "lat": 46.232991,
+            "lon": 6.055279,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            }
+        },
+        "5507": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "ipv": "4",
+                    "lg_query_arg": "addr",
+                    "query": "bgp",
+                    "router": "192.168.2.4"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "ipv": "4",
+                    "lg_query_arg": "addr",
+                    "query": "bgp routes",
+                    "router": "192.168.2.4"
+                },
+                "summary": {
+                    "addr": "$",
+                    "ipv": "4",
+                    "lg_query_arg": "addr",
+                    "query": "bgp summary",
+                    "router": "192.168.2.4"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": -1,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://www.bix.hu/lg/lg.cgi",
+                "type": "post",
+                "url": "http://www.bix.hu/lg/lg.cgi"
+            },
+            "lat": 47.4805856,
+            "lon": 19.1303031,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "55518": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "requestid": "15",
+                    "routerid": "10"
+                },
+                "regex": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "requestid": "20",
+                    "routerid": "10"
+                },
+                "summary": {
+                    "argument": "",
+                    "lg_query_arg": "argument",
+                    "requestid": "10",
+                    "routerid": "10"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routerid",
+                "referer": "http://services.sgix.sg/mrlg/lg.php",
+                "type": "post",
+                "url": "http://services.sgix.sg/mrlg/lg.php"
+            },
+            "lat": 1.283405,
+            "lon": 103.852196,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "57056": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "bgp",
+                    "rtr": "stw-rs1.ripn.net"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "ne_arg": "$",
+                    "query": "ne",
+                    "rtr": "stw-rs1.ripn.net"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "ne_arg",
+                    "query": "summary",
+                    "rtr": "stw-rs1.ripn.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.ix.ru/eng/stw/lookingglass.html",
+                "type": "post",
+                "url": "http://www.ix.ru/eng/stw/lookingglass.html"
+            },
+            "lat": 45.0450234,
+            "lon": 41.9960869,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "59900": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "cmd": "bgp",
+                    "lg_query_arg": "addr",
+                    "proto": "ipv4",
+                    "router": "217.174.157.1"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "cmd": "sibnrr",
+                    "lg_query_arg": "addr",
+                    "proto": "ipv4",
+                    "router": "217.174.157.1"
+                },
+                "summary": {
+                    "addr": "$",
+                    "cmd": "summary",
+                    "lg_query_arg": "addr",
+                    "proto": "ipv4",
+                    "router": "217.174.157.1"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": -2,
+                "id": "summary",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "table",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://lg.b-ix.net/?cmd=summary&addr=&proto=ipv4&router=217.174.157.1",
+                "type": "get",
+                "url": "http://lg.b-ix.net"
+            },
+            "lat": 42.6954322,
+            "lon": 23.3239467,
+            "output": {
+                "summary": {
+                    "asn": 3,
+                    "ip": 0,
+                    "ipCount": 10
+                },
+                "type": "bird"
+            }
+        },
+        "65000": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "isp": "2607",
+                    "lg_query_arg": "addr",
+                    "query": "bgp"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "isp": "2607",
+                    "lg_query_arg": "addr",
+                    "query": "routes"
+                },
+                "summary": {
+                    "addr": "$",
+                    "isp": "2607",
+                    "lg_query_arg": "addr",
+                    "query": "summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": false,
+                "rarg": false,
+                "referer": "http://www.six.sk/lg.php",
+                "type": "post",
+                "url": "http://lg.six.sk/cgi-bin/nph-lgba"
+            },
+            "lat": 48.1372885,
+            "lon": 17.1071075,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "6695": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1-active.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1-active.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1-active.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "https://lg.de-cix.net",
+                "type": "post",
+                "url": "https://lg.de-cix.net"
+            },
+            "lat": 50.1109,
+            "lon": 8.6821,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "type": "bird"
+            }
+        },
+        "8545": {
+            "commands": {
+                "bgp": {
+                    "authenticity_token": "cNf2v04xuMp8EepN0lr%2FaYbWklwcJbN3fNNUp1lBPw4%3D",
+                    "form[arg]": "$",
+                    "form[query]": "1",
+                    "form[router]": "waw-rs1.plix.pl",
+                    "lg_query_arg": "form[arg]",
+                    "utf8": "%E2%9C%93"
+                },
+                "neighbor": {
+                    "authenticity_token": "cNf2v04xuMp8EepN0lr%2FaYbWklwcJbN3fNNUp1lBPw4%3D",
+                    "form[arg]": "$",
+                    "form[query]": "100",
+                    "form[router]": "waw-rs1.plix.pl",
+                    "lg_query_arg": "form[arg]",
+                    "utf8": "%E2%9C%93"
+                },
+                "summary": {
+                    "authenticity_token": "cNf2v04xuMp8EepN0lr%2FaYbWklwcJbN3fNNUp1lBPw4%3D",
+                    "form[arg]": "",
+                    "form[query]": "2",
+                    "form[router]": "waw-rs1.plix.pl",
+                    "lg_query_arg": "form[arg]",
+                    "utf8": "%E2%9C%93"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "form[router]",
+                "referer": "http://www.plix.pl/en/network/looking_glass",
+                "type": "post",
+                "url": "http://www.plix.pl/en/lg/fetch"
+            },
+            "lat": 52.2,
+            "lon": 21.0169,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": -1
+                },
+                "type": "bird"
+            }
+        },
+        "8631": {
+            "commands": {
+                "bgp": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "addr",
+                    "query": "bgp",
+                    "rtr": "msk-rs1.ripn.net",
+                    "run.x": "9",
+                    "run.y": "15"
+                },
+                "neighbor": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "addr",
+                    "query": "ne",
+                    "rtr": "msk-rs1.ripn.net",
+                    "run.x": "15",
+                    "run.y": "12"
+                },
+                "summary": {
+                    "Submit": "1",
+                    "addr": "$",
+                    "community": "",
+                    "lg_query_arg": "addr",
+                    "query": "summary",
+                    "rtr": "msk-rs1.ripn.net",
+                    "run.x": "15",
+                    "run.y": "12"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rtr",
+                "referer": "http://www.msk-ix.ru/eng/lookingglass.html",
+                "type": "post",
+                "url": "http://www.msk-ix.ru/eng/lookingglass.html"
+            },
+            "lat": 55.80758,
+            "lon": 3746679,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 7
+                },
+                "type": "bird"
+            }
+        },
+        "8714": {
+            "commands": {
+                "bgp": {
+                    "arg": "$",
+                    "arg2": "",
+                    "lg_query_arg": "arg",
+                    "query": "show ip bgp <argument>",
+                    "query route-server": "query route-server",
+                    "rs": "rs3 - ipv4 & ipv6"
+                },
+                "neighbor": {
+                    "arg": "$",
+                    "arg2": "",
+                    "lg_query_arg": "arg",
+                    "query": "show ip bgp neighbor <argument> received-routes",
+                    "query route-server": "query route-server",
+                    "rs": "rs3 - ipv4 & ipv6"
+                },
+                "summary": {
+                    "arg": "$",
+                    "arg2": "",
+                    "lg_query_arg": "arg",
+                    "query": "show ip bgp summary",
+                    "query route-server": "query route-server",
+                    "rs": "rs3 - ipv4 & ipv6"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "rs",
+                "referer": "https://support.linx.net/cgi-bin/rs/members/rslg",
+                "type": "post",
+                "url": "https://support.linx.net/cgi-bin/rs/members/rslg"
+            },
+            "lat": 51.5072,
+            "lon": 0.1275,
+            "output": {
+                "summary": {
+                    "asn": 9,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "9033": {
+            "commands": {
+                "bgp": {
+                    "lg_query_arg": "q",
+                    "q": "$"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": 0,
+                "referer": "http://lg.ecix.net",
+                "type": "get",
+                "url": "http://lg.ecix.net/prefix_detail/rs1-lg.dus/ipv4"
+            },
+            "lat": 51.2384547,
+            "lon": 6.8143502,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 4
+                },
+                "type": "bird"
+            }
+        },
+        "9439": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs1.wix.nzix.net"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "rs1.wix.nzix.net"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "rs1.wix.nzix.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://nzix.net/cgi-bin/lg.cgi",
+                "type": "post",
+                "url": "http://nzix.net/cgi-bin/lg.cgi"
+            },
+            "lat": -41.2443701,
+            "lon": 174.7618546,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        },
+        "9560": {
+            "commands": {
+                "bgp": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "bgp",
+                    "router": "rs1.ape.nzix.net"
+                },
+                "neighbor": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "advertised-routes",
+                    "router": "rs1.ape.nzix.net"
+                },
+                "summary": {
+                    "addr": "$",
+                    "lg_query_arg": "addr",
+                    "protocol": "IPv4",
+                    "query": "summary",
+                    "router": "rs1.ape.nzix.net"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": true,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "router",
+                "referer": "http://nzix.net/cgi-bin/lg.cgi",
+                "type": "post",
+                "url": "http://nzix.net/cgi-bin/lg.cgi"
+            },
+            "lat": -36.8630231,
+            "lon": 174.8654693,
+            "output": {
+                "summary": {
+                    "asn": 2,
+                    "ip": 0,
+                    "ipCount": 9
+                },
+                "type": "bird"
+            }
+        }
+    }
+}
