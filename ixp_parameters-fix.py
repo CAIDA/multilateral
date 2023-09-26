@@ -23,7 +23,7 @@ __email__ = "<giotsas@gmail.com>"
 #
 # This software program and documentation are copyrighted by The Regents of
 # the University of California. The software program and documentation are
-# supplied “as is”, without any accompanying services from The Regents. The
+# supplied as is, without any accompanying services from The Regents. The
 # Regents does not warrant that the operation of the program will be
 # uninterrupted or error-free. The end-user understands that the program
 # was developed for research purposes and is advised not to rely
@@ -36,7 +36,7 @@ __email__ = "<giotsas@gmail.com>"
 # THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
 # DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
-# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# SOFTWARE PROVIDED HEREUNDER IS ON AN AS IS BASIS, AND THE UNIVERSITY OF
 # CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 # ENHANCEMENTS, OR MODIFICATIONS.
 import json
@@ -53,19 +53,19 @@ for server in decoded["looking_glasses"].keys():
     fixed["looking_glasses"][server]["http"] = {}
     arg = None
     for key in decoded["looking_glasses"][server].keys():
-	value = decoded["looking_glasses"][server][key]
-	if key == "arg":
-	    arg = value
-	elif key in http_keys:
-	    fixed["looking_glasses"][server]["http"][key] = value
-	else:
-	    fixed["looking_glasses"][server][key] = value
-    if key is None:
-	sys.stderr.write("failed to find arg for "+server+"\n")
-
-    for key in fixed["looking_glasses"][server]["commands"].keys():
-	fixed["looking_glasses"][server]["commands"][key]["lg_query_arg"] = arg
-    if "output" in fixed["looking_glasses"][server]:
-    	fixed["looking_glasses"][server]["output"]["type"] = "bird"
+        value = decoded["looking_glasses"][server][key]
+        if key == "arg":
+            arg = value
+        elif key in http_keys:
+            fixed["looking_glasses"][server]["http"][key] = value
+        else:
+            fixed["looking_glasses"][server][key] = value
+        if key is None:
+            sys.stderr.write("failed to find arg for "+server+"\n")
     
-print json.dumps(fixed,sort_keys=True, indent=4, separators=(',', ': '))
+    for key in fixed["looking_glasses"][server]["commands"].keys():
+        fixed["looking_glasses"][server]["commands"][key]["lg_query_arg"] = arg
+        if "output" in fixed["looking_glasses"][server]:
+            fixed["looking_glasses"][server]["output"]["type"] = "bird"
+    
+print(json.dumps(fixed,sort_keys=True, indent=4, separators=(',', ': ')))

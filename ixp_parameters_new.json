@@ -264,6 +264,12 @@
                     "ip": 0,
                     "ipCount": 4
                 },
+                "communities": {
+                    "allow_all": "15669:15669",
+                    "block:all": ["0:15669"],
+                    "allow_one": "15669:$AS",
+                    "block_one": "0:$AS"
+                },
                 "type": "bird"
             }
         },
@@ -938,28 +944,28 @@
         "42403": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "nsk-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"nsk-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "nsk-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"nsk-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "nsk-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"nsk-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -968,23 +974,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/nsk/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/nsk/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 54.969977,
-            "lon": 82.9494049,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["42403:42403"],
+                    "block_all":["0:42403"],
+                    "allow_one": "42403:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1031,7 +1043,12 @@
                     "ip": 0,
                     "ipCount": 6
                 },
-                "type": "bird"
+                "communities": {
+                    "block_all": ["42476:65535", "65535:65281", "65535:65282"],
+                    "block_one": "42476:$AS",
+                    "allow_one": "$AS:42476"
+                },
+                "type": "quagga"
             }
         },
         "43100": {
@@ -1088,28 +1105,28 @@
         "43213": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "ekt-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"ekt-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "ekt-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"ekt-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "ekt-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"ekt-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1118,23 +1135,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/ekt/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/ekt/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 56.813891,
-            "lon": 60.6549335,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["43213:43213"],
+                    "block_all":["0:43213"],
+                    "allow_one": "43213:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1142,34 +1165,28 @@
         "43690": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "spb-rs1.ripn.net",
-                    "run.x": "11",
-                    "run.y": "12"
+                    "query":"bgp",
+                    "rtr":"spb-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "spb-rs1.ripn.net",
-                    "run.x": "10",
-                    "run.y": "10"
+                    "query":"ne",
+                    "rtr":"spb-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "spb-rs1.ripn.net",
-                    "run.x": "26",
-                    "run.y": "23"
+                    "query":"summary",
+                    "rtr":"spb-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1178,23 +1195,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/spb/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/spb/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 59.9174455,
-            "lon": 30.3250575,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["43690:43690"],
+                    "block_all":["0:43690"],
+                    "allow_one": "43690:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1250,28 +1273,28 @@
         "47822": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "smr-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"smr-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "smr-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"smr-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "smr-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"smr-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1280,23 +1303,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/smr/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/smr/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 53.260908,
-            "lon": 50.198077,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["47822:47822"],
+                    "block_all":["0:47822"],
+                    "allow_one": "47822:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1304,28 +1333,28 @@
         "48216": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "rnd-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"rnd-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "rnd-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"rnd-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "rnd-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"rnd-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1334,23 +1363,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/rnd/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/rnd/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 47.2610085,
-            "lon": 39.6279999,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["48216:48216"],
+                    "block_all":["0:48216"],
+                    "allow_one": "48216:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1358,28 +1393,28 @@
         "50706": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "kzn-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"kzn-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "kzn-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"kzn-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "kzn-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"kzn-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1388,23 +1423,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/kzn/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/kzn/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 55.7955015,
-            "lon": 49.073303,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["50706:50706"],
+                    "block_all":["0:50706"],
+                    "allow_one": "50706:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1521,21 +1562,21 @@
                     "ipv": "4",
                     "lg_query_arg": "addr",
                     "query": "bgp",
-                    "router": "192.168.2.4"
+                    "router": "192.168.2.41"
                 },
-                "neighbor": {
+                "regex": {
                     "addr": "$",
                     "ipv": "4",
                     "lg_query_arg": "addr",
-                    "query": "bgp routes",
-                    "router": "192.168.2.4"
+                    "query": "as routes received",
+                    "router": "192.168.2.41"
                 },
                 "summary": {
                     "addr": "$",
                     "ipv": "4",
                     "lg_query_arg": "addr",
                     "query": "bgp summary",
-                    "router": "192.168.2.4"
+                    "router": "192.168.2.41"
                 }
             },
             "html": {
@@ -1550,17 +1591,22 @@
             "http": {
                 "prefix": true,
                 "rarg": "router",
-                "referer": "http://www.bix.hu/lg/lg.cgi",
+                "referer": "http://bix.hu/en/looking_glass",
                 "type": "post",
-                "url": "http://www.bix.hu/lg/lg.cgi"
+                "url": "http://bix.hu/lg/lg.cgi"
             },
             "lat": 47.4805856,
             "lon": 19.1303031,
             "output": {
                 "summary": {
-                    "asn": 2,
+                    "asn": 1,
                     "ip": 0,
-                    "ipCount": 9
+                    "ipCount": 4
+                },
+                "communities": {
+                    "block_all": ["5507:10"],
+                    "block_one": "0:$AS:10",
+                    "allow_one": "$AS:1"
                 },
                 "type": "bird"
             }
@@ -1568,22 +1614,22 @@
         "55518": {
             "commands": {
                 "bgp": {
-                    "argument": "$",
-                    "lg_query_arg": "argument",
-                    "requestid": "15",
-                    "routerid": "10"
+                    "arg": "$",
+                    "lg_query_arg": "arg",
+                    "query": "1",
+                    "router": "Route Server at Global Switch"
                 },
                 "regex": {
-                    "argument": "$",
-                    "lg_query_arg": "argument",
-                    "requestid": "20",
-                    "routerid": "10"
+                    "arg": "^$",
+                    "lg_query_arg": "arg",
+                    "query": "17",
+                    "router": "Route Server at Global Switch"
                 },
                 "summary": {
-                    "argument": "",
-                    "lg_query_arg": "argument",
-                    "requestid": "10",
-                    "routerid": "10"
+                    "arg": "",
+                    "lg_query_arg": "arg",
+                    "query": "2",
+                    "router": "Route Server at Global Switch"
                 }
             },
             "html": {
@@ -1597,10 +1643,10 @@
             },
             "http": {
                 "prefix": true,
-                "rarg": "routerid",
+                "rarg": "router",
                 "referer": "http://services.sgix.sg/mrlg/lg.php",
                 "type": "post",
-                "url": "http://services.sgix.sg/mrlg/lg.php"
+                "url": "http://services.sgix.sg/mrlg"
             },
             "lat": 1.283405,
             "lon": 103.852196,
@@ -1610,34 +1656,39 @@
                     "ip": 0,
                     "ipCount": 9
                 },
-                "type": "bird"
+                "communities": {
+                    "block_all": ["0:55518", "65535:65281", "65535:65282"],
+                    "block_one": "0:$AS",
+                    "allow_one": "55518:$AS"
+                },
+                "type": "quagga"
             }
         },
         "57056": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "bgp",
-                    "rtr": "stw-rs1.ripn.net"
+                    "query":"bgp",
+                    "rtr":"stw-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "ne_arg": "$",
-                    "query": "ne",
-                    "rtr": "stw-rs1.ripn.net"
+                    "query":"ne",
+                    "rtr":"stw-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "ne_arg",
-                    "query": "summary",
-                    "rtr": "stw-rs1.ripn.net"
+                    "query":"summary",
+                    "rtr":"stw-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1646,23 +1697,29 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.ix.ru/eng/stw/lookingglass.html",
-                "type": "post",
-                "url": "http://www.ix.ru/eng/stw/lookingglass.html"
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
+                "type": "get",
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
-            "lat": 45.0450234,
-            "lon": 41.9960869,
+            "lat": 55.80758,
+            "lon": 3746679,
             "output": {
                 "summary": {
                     "asn": 2,
                     "ip": 0,
                     "ipCount": 7
+                },
+                "communities": {
+                    "allow_all":["57056:57056"],
+                    "block_all":["0:57056"],
+                    "allow_one": "57056:$AS",
+                    "block_one": "0:$AS"
                 },
                 "type": "bird"
             }
@@ -1670,42 +1727,59 @@
         "59900": {
             "commands": {
                 "bgp": {
-                    "addr": "$",
-                    "cmd": "bgp",
-                    "lg_query_arg": "addr",
+                    "n": "$",
+                    "cmd": "sib",
+                    "lg_query_arg": "n",
                     "proto": "ipv4",
-                    "router": "217.174.157.1"
+                    "r": "10.4.4.22"
                 },
                 "neighbor": {
                     "addr": "$",
                     "cmd": "sibnrr",
                     "lg_query_arg": "addr",
                     "proto": "ipv4",
-                    "router": "217.174.157.1"
+                    "router": "10.4.4.22"
                 },
                 "summary": {
                     "addr": "$",
                     "cmd": "summary",
                     "lg_query_arg": "addr",
                     "proto": "ipv4",
-                    "router": "217.174.157.1"
+                    "router": "10.4.4.22"
                 }
             },
-            "html": {
-                "class": "",
-                "contentindex": -2,
-                "id": "summary",
-                "insertbr": false,
-                "striphtml": true,
-                "tag": "table",
-                "tagindex": 0
-            },
+            "html":[
+                    {
+                        "class": "",
+                        "contentindex": -1,
+                        "id": "summary",
+                        "insertbr": false,
+                        "striphtml": true,
+                        "tag": "table",
+                        "tagindex": 0,
+                        "commands": ["summary"]
+                    },
+                    {
+                        "class": "",
+                        "contentindex": 0,
+                        "id": "",
+                        "insertbr": true,
+                        "striphtml": true,
+                        "tag": "pre",
+                        "tagindex": 0,
+                        "commands": ["neighbor", "bgp"]
+                    }
+            ],
             "http": {
                 "prefix": true,
-                "rarg": "router",
+                "rarg": {
+                    "summary": "router",
+                    "neighbor": "router",
+                    "bgp":"r"
+                },
                 "referer": "http://lg.b-ix.net/?cmd=summary&addr=&proto=ipv4&router=217.174.157.1",
                 "type": "get",
-                "url": "http://lg.b-ix.net"
+                "url": "http://lg.b-ix.net/"
             },
             "lat": 42.6954322,
             "lon": 23.3239467,
@@ -1715,7 +1789,13 @@
                     "ip": 0,
                     "ipCount": 10
                 },
-                "type": "bird"
+                "communities": {
+                    "allow_all": "",
+                    "allow_one": "59900:$AS",
+                    "block_all": ["59900:0"],
+                    "block_one": "59900:$AS"
+                },
+                "type": "quagga"
             }
         },
         "65000": {
@@ -1776,6 +1856,14 @@
                     "submit": "Submit",
                     "tab": "prefix_info"
                 },
+                "bgp_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1-active.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
                 "neighbor": {
                     "argument": "$",
                     "lg_query_arg": "argument",
@@ -1784,10 +1872,25 @@
                     "submit": "Submit",
                     "tab": "neighbour_info"
                 },
+                "neighbor_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1-active.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
                 "summary": {
                     "lg_query_arg": "argument",
                     "query": "show ip bgp summary",
                     "routeserver": "rs1-active.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                },
+                "summary_v6": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1-active.de-cix.net -6",
                     "submit": "Submit",
                     "tab": "bgp_summary"
                 }
@@ -1816,6 +1919,173 @@
                     "ip": 0,
                     "ipCount": 5
                 },
+                "communities": {
+                    "block_all": ["0:6695", "6695:65281", "6695:65282", "65535:65281", "65535:65282"],
+                    "block_one": "0:$AS",
+                    "allow_one": "6695:$AS"
+                },
+                "type": "bird"
+            }
+        },
+        "63034": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "bgp_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.nyc.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "neighbor_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.nyc.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.nyc.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                },
+                "summary_v6": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.nyc.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "https://lg.nyc.de-cix.net/",
+                "type": "post",
+                "url": "https://lg.nyc.de-cix.net/"
+            },
+            "lat": 50.1109,
+            "lon": 8.6821,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "communities": {
+                    "block_all": ["0:63034", "63034:65281", "63034:65282", "65535:65281", "65535:65282"],
+                    "block_one": "0:$AS",
+                    "allow_one": "63034:$AS"
+                },
+                "type": "bird"
+            }
+        },
+        "62499": {
+            "commands": {
+                "bgp": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.dfw.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "bgp_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp",
+                    "routeserver": "rs1.dfw.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "prefix_info"
+                },
+                "neighbor": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.dfw.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "neighbor_v6": {
+                    "argument": "$",
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp neighbor",
+                    "routeserver": "rs1.dfw.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "neighbour_info"
+                },
+                "summary": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.dfw.de-cix.net",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                },
+                "summary_v6": {
+                    "lg_query_arg": "argument",
+                    "query": "show ip bgp summary",
+                    "routeserver": "rs1.dfw.de-cix.net -6",
+                    "submit": "Submit",
+                    "tab": "bgp_summary"
+                }
+            },
+            "html": {
+                "class": "",
+                "contentindex": 0,
+                "id": "",
+                "insertbr": false,
+                "striphtml": false,
+                "tag": "pre",
+                "tagindex": 0
+            },
+            "http": {
+                "prefix": true,
+                "rarg": "routeserver",
+                "referer": "https://lg.dfw.de-cix.net/",
+                "type": "post",
+                "url": "https://lg.dfw.de-cix.net/"
+            },
+            "lat": 50.1109,
+            "lon": 8.6821,
+            "output": {
+                "summary": {
+                    "asn": 1,
+                    "ip": 0,
+                    "ipCount": 5
+                },
+                "communities": {
+                    "block_all": ["0:62499", "62499:65281", "62499:65282", "65535:65281", "65535:65282"],
+                    "block_one": "0:$AS",
+                    "allow_one": "62499:$AS"
+                },
                 "type": "bird"
             }
         },
@@ -1830,7 +2100,7 @@
                     "utf8": "%E2%9C%93"
                 },
                 "neighbor": {
-                    "authenticity_token": "cNf2v04xuMp8EepN0lr%2FaYbWklwcJbN3fNNUp1lBPw4%3D",
+                    "authenticity_token": "%2FK0QmP9CkrrDqOWF9%2B2T1%2BhdAL%2FhE%2Frrqofgi62lJzY%3D",
                     "form[arg]": "$",
                     "form[query]": "100",
                     "form[router]": "waw-rs1.plix.pl",
@@ -1838,7 +2108,7 @@
                     "utf8": "%E2%9C%93"
                 },
                 "summary": {
-                    "authenticity_token": "cNf2v04xuMp8EepN0lr%2FaYbWklwcJbN3fNNUp1lBPw4%3D",
+                    "authenticity_token": "%2FK0QmP9CkrrDqOWF9%2B2T1%2BhdAL%2FhE%2Frrqofgi62lJzY%3D",
                     "form[arg]": "",
                     "form[query]": "2",
                     "form[router]": "waw-rs1.plix.pl",
@@ -1870,40 +2140,39 @@
                     "ip": 0,
                     "ipCount": -1
                 },
+                "communities":{
+                    "allow_one": "$AS:65111",
+                    "block_one": "$AS:65000",
+                    "block_all": ["8545:65000", "8545:65281", "8545:65282", "65535:65281", "65535:65282"]
+                },
                 "type": "bird"
             }
         },
         "8631": {
             "commands": {
                 "bgp": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "addr",
-                    "query": "bgp",
-                    "rtr": "msk-rs1.ripn.net",
-                    "run.x": "9",
-                    "run.y": "15"
+                    "query":"bgp",
+                    "rtr":"msk-rs1.ripn.net",
+                    "addr":"$",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 },
                 "neighbor": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "addr",
-                    "query": "ne",
-                    "rtr": "msk-rs1.ripn.net",
-                    "run.x": "15",
-                    "run.y": "12"
+                    "query":"ne",
+                    "rtr":"msk-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"$",
+                    "community":"",
+                    "lg_query_arg": "ne_arg"
                 },
                 "summary": {
-                    "Submit": "1",
-                    "addr": "$",
-                    "community": "",
-                    "lg_query_arg": "addr",
-                    "query": "summary",
-                    "rtr": "msk-rs1.ripn.net",
-                    "run.x": "15",
-                    "run.y": "12"
+                    "query":"summary",
+                    "rtr":"msk-rs1.ripn.net",
+                    "addr":"",
+                    "ne_arg":"",
+                    "community":"",
+                    "lg_query_arg": "addr"
                 }
             },
             "html": {
@@ -1912,15 +2181,15 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
                 "prefix": true,
                 "rarg": "rtr",
-                "referer": "http://www.msk-ix.ru/eng/lookingglass.html",
+                "referer": "https://www.msk-ix.ru/en/lookingglass?query=",
                 "type": "post",
-                "url": "http://www.msk-ix.ru/eng/lookingglass.html"
+                "url": "https://www.msk-ix.ru/ajax/lookingglass/"
             },
             "lat": 55.80758,
             "lon": 3746679,
@@ -1930,34 +2199,37 @@
                     "ip": 0,
                     "ipCount": 7
                 },
+                "communities": {
+                    "allow_all":["8631:8631"],
+                    "block_all":["0:8631"],
+                    "allow_one": "8631:$AS",
+                    "block_one": "0:$AS"
+                },
                 "type": "bird"
             }
         },
         "8714": {
-            "commands": {
-                "bgp": {
-                    "arg": "$",
-                    "arg2": "",
-                    "lg_query_arg": "arg",
-                    "query": "show ip bgp <argument>",
-                    "query route-server": "query route-server",
-                    "rs": "rs3 - ipv4 & ipv6"
+                "commands": {
+                    "neighbor":{
+                    "rs":"rs3.lon1",
+                    "query":"received",
+                    "arg":"$",
+                    "arg2":"",
+                    "lg_query_arg":"arg"
                 },
-                "neighbor": {
-                    "arg": "$",
-                    "arg2": "",
-                    "lg_query_arg": "arg",
-                    "query": "show ip bgp neighbor <argument> received-routes",
-                    "query route-server": "query route-server",
-                    "rs": "rs3 - ipv4 & ipv6"
+                "bgp":{
+                    "rs":"rs3.lon1",
+                    "query":"route",
+                    "arg":"$",
+                    "arg2":"",
+                    "lg_query_arg":"arg"
                 },
                 "summary": {
-                    "arg": "$",
-                    "arg2": "",
-                    "lg_query_arg": "arg",
-                    "query": "show ip bgp summary",
-                    "query route-server": "query route-server",
-                    "rs": "rs3 - ipv4 & ipv6"
+                    "query":"summary",
+                    "arg":"",
+                    "arg2":"",
+                    "lg_query_arg":0,
+                    "rs": "rs3.lon1"
                 }
             },
             "html": {
@@ -1980,11 +2252,16 @@
             "lon": 0.1275,
             "output": {
                 "summary": {
-                    "asn": 9,
+                    "asn": 2,
                     "ip": 0,
                     "ipCount": 9
                 },
-                "type": "bird"
+                "communities": {
+                    "block_all": ["0:8714", "65535:65281", "65535:65282"],
+                    "block_one": "0:$AS",
+                    "allow_one": "8714:$AS"
+                },
+                "type": "quagga"
             }
         },
         "9033": {
@@ -1992,6 +2269,12 @@
                 "bgp": {
                     "lg_query_arg": "q",
                     "q": "$"
+                },
+                "neighbor": {
+                    "lg_query_arg": null
+                },
+                "summary":{
+                    "lg_query_arg": null
                 }
             },
             "html": {
@@ -2000,7 +2283,7 @@
                 "id": "",
                 "insertbr": false,
                 "striphtml": false,
-                "tag": "pre",
+                "tag": "json",
                 "tagindex": 0
             },
             "http": {
@@ -2008,7 +2291,7 @@
                 "rarg": 0,
                 "referer": "http://lg.ecix.net",
                 "type": "get",
-                "url": "http://lg.ecix.net/prefix_detail/rs1-lg.dus/ipv4"
+                "url": "https://lg.ecix.net/api/routeservers/0/"
             },
             "lat": 51.2384547,
             "lon": 6.8143502,
@@ -2018,7 +2301,12 @@
                     "ip": 0,
                     "ipCount": 4
                 },
-                "type": "bird"
+                "communities": {
+                    "block_all": ["65000:0"],
+                    "block_one": "65000:$AS",
+                    "allow_one": "64960:$AS"
+                },
+                "type": "alice"
             }
         },
         "9439": {
