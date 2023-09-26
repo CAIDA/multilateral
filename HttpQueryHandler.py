@@ -45,7 +45,7 @@ import urllib
 import time
 import re
 from bs4 import BeautifulSoup
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 from pprint import pprint
 import sys
 import json
