@@ -54,8 +54,9 @@ import httplib
 import socket
 from StringIO import StringIO
 import pycurl
+import importlib
 
-reload(sys)
+importlib.reload(sys)
 sys.setdefaultencoding("utf-8")
 
 
@@ -135,7 +136,7 @@ class HttpQueryHandler(object):
                     if counter <= len(params):
                         url += "&"
                 url = url.replace(" ", "%20")
-                print url
+                print(url)
                 curl_connector.setopt(pycurl.HTTPHEADER, headers)
                 curl_connector.setopt(curl_connector.URL, url)
             curl_connector.setopt(pycurl.SSL_VERIFYPEER, 0)
@@ -144,9 +145,9 @@ class HttpQueryHandler(object):
             curl_connector.perform()
             curl_connector.close()
             content = storage.getvalue()
-        except pycurl.error, e:
+        except pycurl.error as e:
             error_code, error_text = e.args
-            print 'We got an error. Code: %s, Text:%s' % (error_code, error_text)
+            print('We got an error. Code: %s, Text:%s' % (error_code, error_text))
             if str(error_code) != "18":
                 return -1
             else:
@@ -190,7 +191,7 @@ class HttpQueryHandler(object):
                         if counter <= len(params) - 1:
                             url += "&"
                     url = url.replace(" ", "%20")
-                    print url
+                    print(url)
                     req = urllib2.Request(url, None, headers)
                 response = urllib2.urlopen(req, timeout=timeout)
                 try:

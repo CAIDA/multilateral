@@ -115,7 +115,7 @@ def set_query_arguments(lg, query_address, command, asn):
         if type(lg["http"]["rarg"]) == dict:
             lg["http"]["rarg"] = lg["http"]["rarg"][command]
         if lg["http"]["rarg"] != 0:
-            if not isinstance(q[lg["http"]["rarg"]], basestring):
+            if not isinstance(q[lg["http"]["rarg"]], str):
                 q[lg["http"]["rarg"]] = q[lg["http"]["rarg"]][0]
 
         # set the command argument
@@ -200,14 +200,14 @@ def send_query(outputfile, asn, lg, command, query_address=False):
 
 
 def usage():
-    print "usage:"
-    print "main.py -a <asn> -c <command> -o <outputfile> [-i <inputfile>] "
-    print "\t-a: the ASN you want to query"
-    print "\t-c: the looking glass command:"
-    print "\t\tbgp\n\t\tsummary\n\t\tneighbor"
-    print "\t-o: path to file where the command's output is logged"
-    print "\t-i: path to file with the addresses to query (an address per line)\n"
-    print "\t-f: path to the second file with the addresses required for the bgp and inference commands\n"
+    print("usage:")
+    print("main.py -a <asn> -c <command> -o <outputfile> [-i <inputfile>] ")
+    print("\t-a: the ASN you want to query")
+    print("\t-c: the looking glass command:")
+    print("\t\tbgp\n\t\tsummary\n\t\tneighbor")
+    print("\t-o: path to file where the command's output is logged")
+    print("\t-i: path to file with the addresses to query (an address per line)\n")
+    print("\t-f: path to the second file with the addresses required for the bgp and inference commands\n")
 
 
 def main(argv):
@@ -288,7 +288,7 @@ if __name__ == '__main__':
         else:
             # start_parsing = True
             for address in addresses:
-                print str(counter) + ". " + asn + " " + ": " + address
+                print(str(counter) + ". " + asn + " " + ": " + address)
                 counter += 1
                 filepath = send_query(outputfile, asn, parameters, command, address)
     elif command == "regex":
@@ -298,7 +298,7 @@ if __name__ == '__main__':
             logging.warning("No ASNs to query")
         else:
             for member_asn in as_numbers:
-                print str(counter) + ". " + asn + " " + ": " + member_asn
+                print(str(counter) + ". " + asn + " " + ": " + member_asn)
                 counter += 1
                 filepath = send_query(outputfile, asn, parameters, command, member_asn)
 

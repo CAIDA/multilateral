@@ -96,7 +96,7 @@ class BgpParser:
                 if query_this_prefix:
                     prefixesToQuery.add(prefix.prefix)
                     Helper.saveToFile(outfile, prefix.prefix + "\n", "a+", ixp)
-        print "Use " + str(len(prefixesToQuery)) + " out of " + str(len(prfxList))
+        print("Use " + str(len(prefixesToQuery)) + " out of " + str(len(prfxList)))
         return prefixesToQuery
 
     @staticmethod
@@ -116,7 +116,7 @@ class BgpParser:
         :return: a set of IP addresses to query using the `show ip bgp` command
         :rtype: set
         """
-        print "Parsing neighbor file", inputfile
+        print("Parsing neighbor file", inputfile)
         asnToPrfxCount = {}
         prfxList = {}
 
@@ -312,9 +312,9 @@ class BgpParser:
                             as_to_link[m2] = set()
                         as_to_link[m1].add(m2)
                         as_to_link[m2].add(m1)
-        print len(encountered_members)
+        print(len(encountered_members))
         for asn in as_to_link:
-            print asn, " ", len(as_to_link[asn])
+            print(asn, " ", len(as_to_link[asn]))
         return links
 
     def parse_prefix_info_quagga(self, inputfile, ip2asn, rs_communities):
@@ -410,7 +410,7 @@ class BgpParser:
                         if next_hop in members:
                             encountered_members.add(next_hop)
                         else:
-                            print next_hop
+                            print(next_hop)
                         communities = list()
                         for c in prefix_data["bgp"]["communities"]:
                             communities.append("%s:%s" % (c[0], c[1]))
