@@ -49,7 +49,7 @@ import getopt
 import logging
 import datetime
 from shutil import copyfile
-from collections import Iterable
+from collections.abc import Iterable
 import lgParameters
 import HttpQueryHandler
 from Helper import Helper
