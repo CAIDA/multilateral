@@ -42,7 +42,6 @@ __email__ = "<giotsas@gmail.com>"
 # ENHANCEMENTS, OR MODIFICATIONS.
 
 import urllib
-import urllib2
 import time
 import re
 from bs4 import BeautifulSoup
@@ -113,7 +112,7 @@ class HttpQueryHandler(object):
                 headers = ['User-Agent: ' + user_agent, 'Referer: ' + referrer, 'Connection: keep-alive']
                 if url == "http://noc.ucomline.net/lg1":
                     headers.append("Cookie: PHPSESSID=199d19597747f15a4d778d68b56d4ab7")
-                post_fields = urllib.urlencode(params)
+                post_fields = urllib.parse.urlencode(params)
                 pprint(post_fields)
                 curl_connector.setopt(pycurl.HTTPHEADER, headers)
                 curl_connector.setopt(curl_connector.URL, url)
@@ -171,8 +170,8 @@ class HttpQueryHandler(object):
                     if url == "http://noc.ucomline.net/lg1":
                         headers["Cookie"] = "PHPSESSID=199d19597747f15a4d778d68b56d4ab7"
 
-                    data = urllib.urlencode(params)
-                    req = urllib2.Request(url, data, headers)
+                    data = urllib.parse.urlencode(params)
+                    req = urllib.request.Request(url, data, headers)
                 elif verb == "get":
                     headers = {'User-Agent': user_agent,
                                'Referer': url,
@@ -192,8 +191,8 @@ class HttpQueryHandler(object):
                             url += "&"
                     url = url.replace(" ", "%20")
                     print(url)
-                    req = urllib2.Request(url, None, headers)
-                response = urllib2.urlopen(req, timeout=timeout)
+                    req = urllib.request.Request(url, None, headers)
+                response = urllib.request.urlopen(req, timeout=timeout)
                 try:
                     chunk = True
                     src = ""
@@ -205,7 +204,7 @@ class HttpQueryHandler(object):
                 except httplib.IncompleteRead as e:
                     the_page = e.partial
                 query_ok = True
-            except (urllib2.URLError, httplib.HTTPException, socket.timeout, socket.error) as e:
+            except (urllib.error.URLError, httplib.HTTPException, socket.timeout, socket.error) as e:
                 time.sleep(20)
                 retry_counter += 1
                 if retry_counter >= 2:
