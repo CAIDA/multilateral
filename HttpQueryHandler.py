@@ -51,7 +51,7 @@ import sys
 import json
 import http.client
 import socket
-from StringIO import StringIO
+from io import StringIO
 import pycurl
 import importlib
 
