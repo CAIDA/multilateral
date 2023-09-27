@@ -55,9 +55,6 @@ from io import StringIO
 import pycurl
 import importlib
 
-importlib.reload(sys)
-sys.setdefaultencoding("utf-8")
-
 
 class MLStripper(HTMLParser):
     """
