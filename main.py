@@ -139,7 +139,7 @@ def set_query_arguments(lg, query_address, command, asn):
     return (http_func, prevq, query_url)
 
 
-def scrap_html_oputput(lg, lg_output, asn):
+def scrap_html_output(lg, lg_output, asn):
     """
     Extracts the command output from the LG response
     :param lg: The LG parameters
@@ -180,6 +180,8 @@ def send_query(outputfile, asn, lg, command, query_address=False):
         q = lg["commands"][command]
         query_method = getattr(qh, http_func)
         lg_response = query_method(q, str(query_url), str(lg["http"]["referer"]), lg["http"]["type"])
+        
+        print(type(lg_response))
 
         # print the_page
         q = lg["commands"][command]
@@ -187,7 +189,7 @@ def send_query(outputfile, asn, lg, command, query_address=False):
             q[lg["commands"][command]["lg_query_arg"]] = prevq
 
         # scrap the output
-        command_output = scrap_html_oputput(lg, lg_response, asn)
+        command_output = scrap_html_output(lg, lg_response, asn)
         # write to file
         filename = outputfile
         filename = filename.replace(":", "-")
