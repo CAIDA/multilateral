@@ -49,7 +49,7 @@ from html.parser import HTMLParser
 from pprint import pprint
 import sys
 import json
-import httplib
+import http.client
 import socket
 from StringIO import StringIO
 import pycurl
@@ -201,10 +201,10 @@ class HttpQueryHandler(object):
                         src += chunk
                     response.close()
                     the_page = src
-                except httplib.IncompleteRead as e:
+                except http.client.IncompleteRead as e:
                     the_page = e.partial
                 query_ok = True
-            except (urllib.error.URLError, httplib.HTTPException, socket.timeout, socket.error) as e:
+            except (urllib.error.URLError, http.client.HTTPException, socket.timeout, socket.error) as e:
                 time.sleep(20)
                 retry_counter += 1
                 if retry_counter >= 2:
