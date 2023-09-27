@@ -181,7 +181,7 @@ def send_query(outputfile, asn, lg, command, query_address=False):
         query_method = getattr(qh, http_func)
         lg_response = query_method(q, str(query_url), str(lg["http"]["referer"]), lg["http"]["type"])
         
-        print(type(lg_response))
+        print(type(lg_response), lg_response)
 
         # print the_page
         q = lg["commands"][command]
