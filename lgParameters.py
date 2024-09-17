@@ -22,7 +22,7 @@ __email__ = "<giotsas@gmail.com>"
 #
 # This software program and documentation are copyrighted by The Regents of
 # the University of California. The software program and documentation are
-# supplied “as is”, without any accompanying services from The Regents. The
+# supplied "as is", without any accompanying services from The Regents. The
 # Regents does not warrant that the operation of the program will be
 # uninterrupted or error-free. The end-user understands that the program
 # was developed for research purposes and is advised not to rely
@@ -35,12 +35,14 @@ __email__ = "<giotsas@gmail.com>"
 # THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
 # DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
-# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF
 # CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 # ENHANCEMENTS, OR MODIFICATIONS.
 
-import json, os, sys
-from pprint import pprint
+import os
+import sys
+import json
+
 
 class LgParameters:
     def getRequestParameters(self, command, jsonstr):
@@ -48,7 +50,6 @@ class LgParameters:
         return queryparams[command]
 
     def getLgProfile(self, asn):
-        #with open(os.path.abspath(os.path.dirname(sys.argv[0]))+"/ixp_parameters.json") as data_file:
-        with open(os.path.abspath(os.path.dirname(sys.argv[0]))+"/ixp_parameters_new.json") as data_file:
+        with open(os.path.abspath(os.path.dirname(sys.argv[0])) + "/ixp_parameters_new.json") as data_file:
             lgData = json.load(data_file)
         return lgData["looking_glasses"][asn]

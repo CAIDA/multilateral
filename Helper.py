@@ -1,5 +1,6 @@
 __author__ = "Vasilis Giotsas"
 __email__ = "<giotsas@gmail.com>"
+
 # This software is Copyright (C) 2015 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -22,7 +23,7 @@ __email__ = "<giotsas@gmail.com>"
 #
 # This software program and documentation are copyrighted by The Regents of
 # the University of California. The software program and documentation are
-# supplied “as is”, without any accompanying services from The Regents. The
+# supplied "as is", without any accompanying services from The Regents. The
 # Regents does not warrant that the operation of the program will be
 # uninterrupted or error-free. The end-user understands that the program
 # was developed for research purposes and is advised not to rely
@@ -35,18 +36,19 @@ __email__ = "<giotsas@gmail.com>"
 # THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
 # DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 # WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
-# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF
 # CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 # ENHANCEMENTS, OR MODIFICATIONS.
 
-from netaddr import *
 import os
+from netaddr import *
+
 
 class Helper:
     """
     Collection of helper classes used throughout the program
     """
-    
+
     @staticmethod
     def getIPNetwork(ipnet):
         """
